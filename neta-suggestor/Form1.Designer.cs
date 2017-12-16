@@ -33,7 +33,6 @@
 			this.初期化ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.終了XToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.ヘルプHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-			this.使い方UToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.バージョン情報VToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.groupBoxInputs = new System.Windows.Forms.GroupBox();
 			this.groupBoxInputsInterest = new System.Windows.Forms.GroupBox();
@@ -95,17 +94,10 @@
 			// ヘルプHToolStripMenuItem
 			// 
 			this.ヘルプHToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.使い方UToolStripMenuItem,
             this.バージョン情報VToolStripMenuItem});
 			this.ヘルプHToolStripMenuItem.Name = "ヘルプHToolStripMenuItem";
 			this.ヘルプHToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
 			this.ヘルプHToolStripMenuItem.Text = "ヘルプ(&H)";
-			// 
-			// 使い方UToolStripMenuItem
-			// 
-			this.使い方UToolStripMenuItem.Name = "使い方UToolStripMenuItem";
-			this.使い方UToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-			this.使い方UToolStripMenuItem.Text = "使い方(&U)";
 			// 
 			// バージョン情報VToolStripMenuItem
 			// 
@@ -293,7 +285,6 @@
 		private System.Windows.Forms.ToolStripMenuItem 終了XToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem 初期化ToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem ヘルプHToolStripMenuItem;
-		private System.Windows.Forms.ToolStripMenuItem 使い方UToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem バージョン情報VToolStripMenuItem;
 		private System.Windows.Forms.GroupBox groupBoxInputs;
 		private System.Windows.Forms.GroupBox groupBoxInputsResult;
