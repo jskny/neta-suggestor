@@ -181,6 +181,7 @@
 			// 
 			this.resultLabel4.AutoSize = true;
 			this.resultLabel4.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+			this.resultLabel4.ForeColor = System.Drawing.SystemColors.Highlight;
 			this.resultLabel4.Location = new System.Drawing.Point(125, 85);
 			this.resultLabel4.Name = "resultLabel4";
 			this.resultLabel4.Size = new System.Drawing.Size(102, 16);
@@ -201,6 +202,7 @@
 			// 
 			this.resultLabel6.AutoSize = true;
 			this.resultLabel6.Font = new System.Drawing.Font("MS UI Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+			this.resultLabel6.ForeColor = System.Drawing.SystemColors.Highlight;
 			this.resultLabel6.Location = new System.Drawing.Point(125, 129);
 			this.resultLabel6.Name = "resultLabel6";
 			this.resultLabel6.Size = new System.Drawing.Size(102, 16);

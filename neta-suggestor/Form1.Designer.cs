@@ -36,26 +36,26 @@
 			this.使い方UToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.バージョン情報VToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.groupBoxInputs = new System.Windows.Forms.GroupBox();
-			this.groupBoxInputsResult = new System.Windows.Forms.GroupBox();
-			this.groupBoxInputsCan = new System.Windows.Forms.GroupBox();
-			this.groupBoxInputsCanTextBox1 = new System.Windows.Forms.TextBox();
-			this.groupBoxInputsCanButton1 = new System.Windows.Forms.Button();
+			this.groupBoxInputsInterest = new System.Windows.Forms.GroupBox();
 			this.groupBoxInputsInterestButton1 = new System.Windows.Forms.Button();
 			this.groupBoxInputsInterestTextBox1 = new System.Windows.Forms.TextBox();
-			this.groupBoxInputsInterest = new System.Windows.Forms.GroupBox();
-			this.groupBoxInputsResultCan = new System.Windows.Forms.GroupBox();
-			this.groupBoxInputsResultCanListBox1 = new System.Windows.Forms.ListBox();
+			this.groupBoxInputsCan = new System.Windows.Forms.GroupBox();
+			this.groupBoxInputsCanButton1 = new System.Windows.Forms.Button();
+			this.groupBoxInputsCanTextBox1 = new System.Windows.Forms.TextBox();
+			this.groupBoxInputsResult = new System.Windows.Forms.GroupBox();
+			this.groupBoxInputsResultButtonReset = new System.Windows.Forms.Button();
+			this.groupBoxInputsResultButton1 = new System.Windows.Forms.Button();
 			this.groupBoxInputsResultInterest = new System.Windows.Forms.GroupBox();
 			this.groupBoxInputsResultInterestListBox1 = new System.Windows.Forms.ListBox();
-			this.groupBoxInputsResultButton1 = new System.Windows.Forms.Button();
-			this.groupBoxInputsResultButtonReset = new System.Windows.Forms.Button();
+			this.groupBoxInputsResultCan = new System.Windows.Forms.GroupBox();
+			this.groupBoxInputsResultCanListBox1 = new System.Windows.Forms.ListBox();
 			this.menuStrip1.SuspendLayout();
 			this.groupBoxInputs.SuspendLayout();
-			this.groupBoxInputsResult.SuspendLayout();
-			this.groupBoxInputsCan.SuspendLayout();
 			this.groupBoxInputsInterest.SuspendLayout();
-			this.groupBoxInputsResultCan.SuspendLayout();
+			this.groupBoxInputsCan.SuspendLayout();
+			this.groupBoxInputsResult.SuspendLayout();
 			this.groupBoxInputsResultInterest.SuspendLayout();
+			this.groupBoxInputsResultCan.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// menuStrip1
@@ -81,7 +81,7 @@
 			// 初期化ToolStripMenuItem
 			// 
 			this.初期化ToolStripMenuItem.Name = "初期化ToolStripMenuItem";
-			this.初期化ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.初期化ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
 			this.初期化ToolStripMenuItem.Text = "初期化";
 			this.初期化ToolStripMenuItem.Click += new System.EventHandler(this.初期化ToolStripMenuItem_Click);
 			// 
@@ -125,46 +125,16 @@
 			this.groupBoxInputs.TabStop = false;
 			this.groupBoxInputs.Text = "基本入力フォーム";
 			// 
-			// groupBoxInputsResult
+			// groupBoxInputsInterest
 			// 
-			this.groupBoxInputsResult.Controls.Add(this.groupBoxInputsResultButtonReset);
-			this.groupBoxInputsResult.Controls.Add(this.groupBoxInputsResultButton1);
-			this.groupBoxInputsResult.Controls.Add(this.groupBoxInputsResultInterest);
-			this.groupBoxInputsResult.Controls.Add(this.groupBoxInputsResultCan);
-			this.groupBoxInputsResult.Location = new System.Drawing.Point(285, 28);
-			this.groupBoxInputsResult.Name = "groupBoxInputsResult";
-			this.groupBoxInputsResult.Size = new System.Drawing.Size(327, 172);
-			this.groupBoxInputsResult.TabIndex = 2;
-			this.groupBoxInputsResult.TabStop = false;
-			this.groupBoxInputsResult.Text = "入力結果";
-			// 
-			// groupBoxInputsCan
-			// 
-			this.groupBoxInputsCan.Controls.Add(this.groupBoxInputsCanButton1);
-			this.groupBoxInputsCan.Controls.Add(this.groupBoxInputsCanTextBox1);
-			this.groupBoxInputsCan.Location = new System.Drawing.Point(7, 19);
-			this.groupBoxInputsCan.Name = "groupBoxInputsCan";
-			this.groupBoxInputsCan.Size = new System.Drawing.Size(253, 74);
-			this.groupBoxInputsCan.TabIndex = 0;
-			this.groupBoxInputsCan.TabStop = false;
-			this.groupBoxInputsCan.Text = "できること";
-			// 
-			// groupBoxInputsCanTextBox1
-			// 
-			this.groupBoxInputsCanTextBox1.Location = new System.Drawing.Point(7, 19);
-			this.groupBoxInputsCanTextBox1.Name = "groupBoxInputsCanTextBox1";
-			this.groupBoxInputsCanTextBox1.Size = new System.Drawing.Size(240, 19);
-			this.groupBoxInputsCanTextBox1.TabIndex = 0;
-			// 
-			// groupBoxInputsCanButton1
-			// 
-			this.groupBoxInputsCanButton1.Location = new System.Drawing.Point(7, 44);
-			this.groupBoxInputsCanButton1.Name = "groupBoxInputsCanButton1";
-			this.groupBoxInputsCanButton1.Size = new System.Drawing.Size(240, 23);
-			this.groupBoxInputsCanButton1.TabIndex = 1;
-			this.groupBoxInputsCanButton1.Text = "登録";
-			this.groupBoxInputsCanButton1.UseVisualStyleBackColor = true;
-			this.groupBoxInputsCanButton1.Click += new System.EventHandler(this.groupBoxInputsCanButton1_Click);
+			this.groupBoxInputsInterest.Controls.Add(this.groupBoxInputsInterestButton1);
+			this.groupBoxInputsInterest.Controls.Add(this.groupBoxInputsInterestTextBox1);
+			this.groupBoxInputsInterest.Location = new System.Drawing.Point(7, 99);
+			this.groupBoxInputsInterest.Name = "groupBoxInputsInterest";
+			this.groupBoxInputsInterest.Size = new System.Drawing.Size(253, 74);
+			this.groupBoxInputsInterest.TabIndex = 2;
+			this.groupBoxInputsInterest.TabStop = false;
+			this.groupBoxInputsInterest.Text = "興味を持ったこと";
 			// 
 			// groupBoxInputsInterestButton1
 			// 
@@ -183,38 +153,66 @@
 			this.groupBoxInputsInterestTextBox1.Size = new System.Drawing.Size(240, 19);
 			this.groupBoxInputsInterestTextBox1.TabIndex = 0;
 			// 
-			// groupBoxInputsInterest
+			// groupBoxInputsCan
 			// 
-			this.groupBoxInputsInterest.Controls.Add(this.groupBoxInputsInterestButton1);
-			this.groupBoxInputsInterest.Controls.Add(this.groupBoxInputsInterestTextBox1);
-			this.groupBoxInputsInterest.Location = new System.Drawing.Point(7, 99);
-			this.groupBoxInputsInterest.Name = "groupBoxInputsInterest";
-			this.groupBoxInputsInterest.Size = new System.Drawing.Size(253, 74);
-			this.groupBoxInputsInterest.TabIndex = 2;
-			this.groupBoxInputsInterest.TabStop = false;
-			this.groupBoxInputsInterest.Text = "興味を持ったこと";
+			this.groupBoxInputsCan.Controls.Add(this.groupBoxInputsCanButton1);
+			this.groupBoxInputsCan.Controls.Add(this.groupBoxInputsCanTextBox1);
+			this.groupBoxInputsCan.Location = new System.Drawing.Point(7, 19);
+			this.groupBoxInputsCan.Name = "groupBoxInputsCan";
+			this.groupBoxInputsCan.Size = new System.Drawing.Size(253, 74);
+			this.groupBoxInputsCan.TabIndex = 0;
+			this.groupBoxInputsCan.TabStop = false;
+			this.groupBoxInputsCan.Text = "できること";
 			// 
-			// groupBoxInputsResultCan
+			// groupBoxInputsCanButton1
 			// 
-			this.groupBoxInputsResultCan.Controls.Add(this.groupBoxInputsResultCanListBox1);
-			this.groupBoxInputsResultCan.Location = new System.Drawing.Point(7, 19);
-			this.groupBoxInputsResultCan.Name = "groupBoxInputsResultCan";
-			this.groupBoxInputsResultCan.Size = new System.Drawing.Size(150, 116);
-			this.groupBoxInputsResultCan.TabIndex = 0;
-			this.groupBoxInputsResultCan.TabStop = false;
-			this.groupBoxInputsResultCan.Text = "できること";
+			this.groupBoxInputsCanButton1.Location = new System.Drawing.Point(7, 44);
+			this.groupBoxInputsCanButton1.Name = "groupBoxInputsCanButton1";
+			this.groupBoxInputsCanButton1.Size = new System.Drawing.Size(240, 23);
+			this.groupBoxInputsCanButton1.TabIndex = 1;
+			this.groupBoxInputsCanButton1.Text = "登録";
+			this.groupBoxInputsCanButton1.UseVisualStyleBackColor = true;
+			this.groupBoxInputsCanButton1.Click += new System.EventHandler(this.groupBoxInputsCanButton1_Click);
 			// 
-			// groupBoxInputsResultCanListBox1
+			// groupBoxInputsCanTextBox1
 			// 
-			this.groupBoxInputsResultCanListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.groupBoxInputsResultCanListBox1.FormattingEnabled = true;
-			this.groupBoxInputsResultCanListBox1.ItemHeight = 12;
-			this.groupBoxInputsResultCanListBox1.Location = new System.Drawing.Point(6, 18);
-			this.groupBoxInputsResultCanListBox1.MultiColumn = true;
-			this.groupBoxInputsResultCanListBox1.Name = "groupBoxInputsResultCanListBox1";
-			this.groupBoxInputsResultCanListBox1.ScrollAlwaysVisible = true;
-			this.groupBoxInputsResultCanListBox1.Size = new System.Drawing.Size(138, 86);
-			this.groupBoxInputsResultCanListBox1.TabIndex = 0;
+			this.groupBoxInputsCanTextBox1.Location = new System.Drawing.Point(7, 19);
+			this.groupBoxInputsCanTextBox1.Name = "groupBoxInputsCanTextBox1";
+			this.groupBoxInputsCanTextBox1.Size = new System.Drawing.Size(240, 19);
+			this.groupBoxInputsCanTextBox1.TabIndex = 0;
+			// 
+			// groupBoxInputsResult
+			// 
+			this.groupBoxInputsResult.Controls.Add(this.groupBoxInputsResultButtonReset);
+			this.groupBoxInputsResult.Controls.Add(this.groupBoxInputsResultButton1);
+			this.groupBoxInputsResult.Controls.Add(this.groupBoxInputsResultInterest);
+			this.groupBoxInputsResult.Controls.Add(this.groupBoxInputsResultCan);
+			this.groupBoxInputsResult.Location = new System.Drawing.Point(285, 28);
+			this.groupBoxInputsResult.Name = "groupBoxInputsResult";
+			this.groupBoxInputsResult.Size = new System.Drawing.Size(327, 172);
+			this.groupBoxInputsResult.TabIndex = 2;
+			this.groupBoxInputsResult.TabStop = false;
+			this.groupBoxInputsResult.Text = "入力結果";
+			// 
+			// groupBoxInputsResultButtonReset
+			// 
+			this.groupBoxInputsResultButtonReset.Location = new System.Drawing.Point(163, 142);
+			this.groupBoxInputsResultButtonReset.Name = "groupBoxInputsResultButtonReset";
+			this.groupBoxInputsResultButtonReset.Size = new System.Drawing.Size(158, 23);
+			this.groupBoxInputsResultButtonReset.TabIndex = 3;
+			this.groupBoxInputsResultButtonReset.Text = "初期化";
+			this.groupBoxInputsResultButtonReset.UseVisualStyleBackColor = true;
+			this.groupBoxInputsResultButtonReset.Click += new System.EventHandler(this.groupBoxInputsResultButtonReset_Click);
+			// 
+			// groupBoxInputsResultButton1
+			// 
+			this.groupBoxInputsResultButton1.Location = new System.Drawing.Point(7, 142);
+			this.groupBoxInputsResultButton1.Name = "groupBoxInputsResultButton1";
+			this.groupBoxInputsResultButton1.Size = new System.Drawing.Size(150, 23);
+			this.groupBoxInputsResultButton1.TabIndex = 2;
+			this.groupBoxInputsResultButton1.Text = "提案して";
+			this.groupBoxInputsResultButton1.UseVisualStyleBackColor = true;
+			this.groupBoxInputsResultButton1.Click += new System.EventHandler(this.groupBoxInputsResultButton1_Click);
 			// 
 			// groupBoxInputsResultInterest
 			// 
@@ -232,31 +230,31 @@
 			this.groupBoxInputsResultInterestListBox1.FormattingEnabled = true;
 			this.groupBoxInputsResultInterestListBox1.ItemHeight = 12;
 			this.groupBoxInputsResultInterestListBox1.Location = new System.Drawing.Point(6, 18);
-			this.groupBoxInputsResultInterestListBox1.MultiColumn = true;
 			this.groupBoxInputsResultInterestListBox1.Name = "groupBoxInputsResultInterestListBox1";
 			this.groupBoxInputsResultInterestListBox1.ScrollAlwaysVisible = true;
 			this.groupBoxInputsResultInterestListBox1.Size = new System.Drawing.Size(146, 86);
 			this.groupBoxInputsResultInterestListBox1.TabIndex = 0;
 			// 
-			// groupBoxInputsResultButton1
+			// groupBoxInputsResultCan
 			// 
-			this.groupBoxInputsResultButton1.Location = new System.Drawing.Point(7, 142);
-			this.groupBoxInputsResultButton1.Name = "groupBoxInputsResultButton1";
-			this.groupBoxInputsResultButton1.Size = new System.Drawing.Size(150, 23);
-			this.groupBoxInputsResultButton1.TabIndex = 2;
-			this.groupBoxInputsResultButton1.Text = "提案して";
-			this.groupBoxInputsResultButton1.UseVisualStyleBackColor = true;
-			this.groupBoxInputsResultButton1.Click += new System.EventHandler(this.groupBoxInputsResultButton1_Click);
+			this.groupBoxInputsResultCan.Controls.Add(this.groupBoxInputsResultCanListBox1);
+			this.groupBoxInputsResultCan.Location = new System.Drawing.Point(7, 19);
+			this.groupBoxInputsResultCan.Name = "groupBoxInputsResultCan";
+			this.groupBoxInputsResultCan.Size = new System.Drawing.Size(150, 116);
+			this.groupBoxInputsResultCan.TabIndex = 0;
+			this.groupBoxInputsResultCan.TabStop = false;
+			this.groupBoxInputsResultCan.Text = "できること";
 			// 
-			// groupBoxInputsResultButtonReset
+			// groupBoxInputsResultCanListBox1
 			// 
-			this.groupBoxInputsResultButtonReset.Location = new System.Drawing.Point(163, 142);
-			this.groupBoxInputsResultButtonReset.Name = "groupBoxInputsResultButtonReset";
-			this.groupBoxInputsResultButtonReset.Size = new System.Drawing.Size(158, 23);
-			this.groupBoxInputsResultButtonReset.TabIndex = 3;
-			this.groupBoxInputsResultButtonReset.Text = "初期化";
-			this.groupBoxInputsResultButtonReset.UseVisualStyleBackColor = true;
-			this.groupBoxInputsResultButtonReset.Click += new System.EventHandler(this.groupBoxInputsResultButtonReset_Click);
+			this.groupBoxInputsResultCanListBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.groupBoxInputsResultCanListBox1.FormattingEnabled = true;
+			this.groupBoxInputsResultCanListBox1.ItemHeight = 12;
+			this.groupBoxInputsResultCanListBox1.Location = new System.Drawing.Point(6, 18);
+			this.groupBoxInputsResultCanListBox1.Name = "groupBoxInputsResultCanListBox1";
+			this.groupBoxInputsResultCanListBox1.ScrollAlwaysVisible = true;
+			this.groupBoxInputsResultCanListBox1.Size = new System.Drawing.Size(138, 86);
+			this.groupBoxInputsResultCanListBox1.TabIndex = 0;
 			// 
 			// MainForm
 			// 
@@ -276,13 +274,13 @@
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			this.groupBoxInputs.ResumeLayout(false);
-			this.groupBoxInputsResult.ResumeLayout(false);
-			this.groupBoxInputsCan.ResumeLayout(false);
-			this.groupBoxInputsCan.PerformLayout();
 			this.groupBoxInputsInterest.ResumeLayout(false);
 			this.groupBoxInputsInterest.PerformLayout();
-			this.groupBoxInputsResultCan.ResumeLayout(false);
+			this.groupBoxInputsCan.ResumeLayout(false);
+			this.groupBoxInputsCan.PerformLayout();
+			this.groupBoxInputsResult.ResumeLayout(false);
 			this.groupBoxInputsResultInterest.ResumeLayout(false);
+			this.groupBoxInputsResultCan.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
