@@ -218,7 +218,7 @@
 			this.groupBoxInputsResultInterest.Controls.Add(this.groupBoxInputsResultInterestListBox1);
 			this.groupBoxInputsResultInterest.Location = new System.Drawing.Point(163, 19);
 			this.groupBoxInputsResultInterest.Name = "groupBoxInputsResultInterest";
-			this.groupBoxInputsResultInterest.Size = new System.Drawing.Size(158, 117);
+			this.groupBoxInputsResultInterest.Size = new System.Drawing.Size(158, 116);
 			this.groupBoxInputsResultInterest.TabIndex = 1;
 			this.groupBoxInputsResultInterest.TabStop = false;
 			this.groupBoxInputsResultInterest.Text = "興味を持ったこと";
