@@ -35,7 +35,7 @@ namespace neta_suggestor
 				"\n" +
 				"\n" +
 				"This App was created by jskny at 2017."
-				, "Version info", MessageBoxButtons.OK);
+				, "Version info", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
 
 		private void MainForm_Load(object sender, EventArgs e)
@@ -46,6 +46,30 @@ namespace neta_suggestor
 		private void groupBoxInputsResultButton1_Click(object sender, EventArgs e)
 		{
 
+		}
+
+		private void groupBoxInputsCanButton1_Click(object sender, EventArgs e)
+		{
+			if (this.groupBoxInputsCanTextBox1.Text.Length <= 0)
+			{
+				MessageBox.Show("できることを記入してから登録してください。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			this.groupBoxInputsResultCanListBox1.Items.Add(this.groupBoxInputsCanTextBox1.Text);
+			this.groupBoxInputsCanTextBox1.Text = "";
+		}
+
+		private void groupBoxInputsInterestButton1_Click(object sender, EventArgs e)
+		{
+			if (this.groupBoxInputsInterestTextBox1.Text.Length <= 0)
+			{
+				MessageBox.Show("興味を持ったことを記入してから登録してください。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
+
+			this.groupBoxInputsResultInterestListBox1.Items.Add(this.groupBoxInputsInterestTextBox1.Text);
+			this.groupBoxInputsInterestTextBox1.Text = "";
 		}
 	}
 }

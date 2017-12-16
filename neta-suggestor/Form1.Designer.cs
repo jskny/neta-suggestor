@@ -163,6 +163,7 @@
 			this.groupBoxInputsCanButton1.TabIndex = 1;
 			this.groupBoxInputsCanButton1.Text = "登録";
 			this.groupBoxInputsCanButton1.UseVisualStyleBackColor = true;
+			this.groupBoxInputsCanButton1.Click += new System.EventHandler(this.groupBoxInputsCanButton1_Click);
 			// 
 			// groupBoxInputsInterestButton1
 			// 
@@ -172,6 +173,7 @@
 			this.groupBoxInputsInterestButton1.TabIndex = 1;
 			this.groupBoxInputsInterestButton1.Text = "登録";
 			this.groupBoxInputsInterestButton1.UseVisualStyleBackColor = true;
+			this.groupBoxInputsInterestButton1.Click += new System.EventHandler(this.groupBoxInputsInterestButton1_Click);
 			// 
 			// groupBoxInputsInterestTextBox1
 			// 
@@ -241,7 +243,7 @@
 			this.groupBoxInputsResultButton1.Name = "groupBoxInputsResultButton1";
 			this.groupBoxInputsResultButton1.Size = new System.Drawing.Size(150, 23);
 			this.groupBoxInputsResultButton1.TabIndex = 2;
-			this.groupBoxInputsResultButton1.Text = "生成";
+			this.groupBoxInputsResultButton1.Text = "提案して";
 			this.groupBoxInputsResultButton1.UseVisualStyleBackColor = true;
 			this.groupBoxInputsResultButton1.Click += new System.EventHandler(this.groupBoxInputsResultButton1_Click);
 			// 
