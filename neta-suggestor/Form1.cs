@@ -37,5 +37,10 @@ namespace neta_suggestor
 				"This App was created by jskny at 2017."
 				, "Version info", MessageBoxButtons.OK);
 		}
+
+		private void MainForm_Load(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
