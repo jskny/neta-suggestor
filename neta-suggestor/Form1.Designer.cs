@@ -132,7 +132,7 @@
 			this.groupBoxInputsResult.Controls.Add(this.groupBoxInputsResultCan);
 			this.groupBoxInputsResult.Location = new System.Drawing.Point(285, 28);
 			this.groupBoxInputsResult.Name = "groupBoxInputsResult";
-			this.groupBoxInputsResult.Size = new System.Drawing.Size(327, 208);
+			this.groupBoxInputsResult.Size = new System.Drawing.Size(327, 172);
 			this.groupBoxInputsResult.TabIndex = 2;
 			this.groupBoxInputsResult.TabStop = false;
 			this.groupBoxInputsResult.Text = "入力結果";
@@ -196,7 +196,7 @@
 			this.groupBoxInputsResultCan.Controls.Add(this.groupBoxInputsResultCanListBox1);
 			this.groupBoxInputsResultCan.Location = new System.Drawing.Point(7, 19);
 			this.groupBoxInputsResultCan.Name = "groupBoxInputsResultCan";
-			this.groupBoxInputsResultCan.Size = new System.Drawing.Size(150, 153);
+			this.groupBoxInputsResultCan.Size = new System.Drawing.Size(150, 116);
 			this.groupBoxInputsResultCan.TabIndex = 0;
 			this.groupBoxInputsResultCan.TabStop = false;
 			this.groupBoxInputsResultCan.Text = "できること";
@@ -210,7 +210,7 @@
 			this.groupBoxInputsResultCanListBox1.MultiColumn = true;
 			this.groupBoxInputsResultCanListBox1.Name = "groupBoxInputsResultCanListBox1";
 			this.groupBoxInputsResultCanListBox1.ScrollAlwaysVisible = true;
-			this.groupBoxInputsResultCanListBox1.Size = new System.Drawing.Size(138, 122);
+			this.groupBoxInputsResultCanListBox1.Size = new System.Drawing.Size(138, 86);
 			this.groupBoxInputsResultCanListBox1.TabIndex = 0;
 			// 
 			// groupBoxInputsResultInterest
@@ -218,7 +218,7 @@
 			this.groupBoxInputsResultInterest.Controls.Add(this.groupBoxInputsResultInterestListBox1);
 			this.groupBoxInputsResultInterest.Location = new System.Drawing.Point(163, 19);
 			this.groupBoxInputsResultInterest.Name = "groupBoxInputsResultInterest";
-			this.groupBoxInputsResultInterest.Size = new System.Drawing.Size(158, 153);
+			this.groupBoxInputsResultInterest.Size = new System.Drawing.Size(158, 117);
 			this.groupBoxInputsResultInterest.TabIndex = 1;
 			this.groupBoxInputsResultInterest.TabStop = false;
 			this.groupBoxInputsResultInterest.Text = "興味を持ったこと";
@@ -232,23 +232,24 @@
 			this.groupBoxInputsResultInterestListBox1.MultiColumn = true;
 			this.groupBoxInputsResultInterestListBox1.Name = "groupBoxInputsResultInterestListBox1";
 			this.groupBoxInputsResultInterestListBox1.ScrollAlwaysVisible = true;
-			this.groupBoxInputsResultInterestListBox1.Size = new System.Drawing.Size(146, 122);
+			this.groupBoxInputsResultInterestListBox1.Size = new System.Drawing.Size(146, 86);
 			this.groupBoxInputsResultInterestListBox1.TabIndex = 0;
 			// 
 			// groupBoxInputsResultButton1
 			// 
-			this.groupBoxInputsResultButton1.Location = new System.Drawing.Point(7, 178);
+			this.groupBoxInputsResultButton1.Location = new System.Drawing.Point(7, 142);
 			this.groupBoxInputsResultButton1.Name = "groupBoxInputsResultButton1";
 			this.groupBoxInputsResultButton1.Size = new System.Drawing.Size(150, 23);
 			this.groupBoxInputsResultButton1.TabIndex = 2;
 			this.groupBoxInputsResultButton1.Text = "生成";
 			this.groupBoxInputsResultButton1.UseVisualStyleBackColor = true;
+			this.groupBoxInputsResultButton1.Click += new System.EventHandler(this.groupBoxInputsResultButton1_Click);
 			// 
 			// groupBoxInputsResultButtonReset
 			// 
-			this.groupBoxInputsResultButtonReset.Location = new System.Drawing.Point(163, 178);
+			this.groupBoxInputsResultButtonReset.Location = new System.Drawing.Point(163, 142);
 			this.groupBoxInputsResultButtonReset.Name = "groupBoxInputsResultButtonReset";
-			this.groupBoxInputsResultButtonReset.Size = new System.Drawing.Size(150, 23);
+			this.groupBoxInputsResultButtonReset.Size = new System.Drawing.Size(158, 23);
 			this.groupBoxInputsResultButtonReset.TabIndex = 3;
 			this.groupBoxInputsResultButtonReset.Text = "初期化";
 			this.groupBoxInputsResultButtonReset.UseVisualStyleBackColor = true;
@@ -257,7 +258,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(624, 246);
+			this.ClientSize = new System.Drawing.Size(624, 209);
 			this.Controls.Add(this.groupBoxInputsResult);
 			this.Controls.Add(this.groupBoxInputs);
 			this.Controls.Add(this.menuStrip1);
