@@ -45,7 +45,16 @@ namespace neta_suggestor
 
 		private void groupBoxInputsResultButton1_Click(object sender, EventArgs e)
 		{
+			if (this.groupBoxInputsResultCanListBox1.Items.Count == 0 || this.groupBoxInputsResultInterestListBox1.Items.Count == 0)
+			{
+				MessageBox.Show("できることや興味を持ったことを登録してください。", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return;
+			}
 
+			FormResult formResult = new FormResult();
+			formResult.setMainFormPointer(this);
+			formResult.ShowDialog(this);
+			formResult.Dispose();
 		}
 
 		private void groupBoxInputsCanButton1_Click(object sender, EventArgs e)
@@ -101,6 +110,18 @@ namespace neta_suggestor
 		private void 初期化ToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			this.showResetInputedListBoxDialog();
+		}
+
+
+		// FormResultから呼び出し元のデータを使えるようにする
+		// 本当はもっと良い実装方法があるはず
+		public ListBox getListBoxCan()
+		{
+			return (this.groupBoxInputsResultCanListBox1);
+		}
+		public ListBox getListBoxInterest()
+		{
+			return (this.groupBoxInputsResultInterestListBox1);
 		}
 	}
 }
