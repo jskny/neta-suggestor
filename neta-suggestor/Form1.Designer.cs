@@ -81,8 +81,9 @@
 			// 初期化ToolStripMenuItem
 			// 
 			this.初期化ToolStripMenuItem.Name = "初期化ToolStripMenuItem";
-			this.初期化ToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+			this.初期化ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.初期化ToolStripMenuItem.Text = "初期化";
+			this.初期化ToolStripMenuItem.Click += new System.EventHandler(this.初期化ToolStripMenuItem_Click);
 			// 
 			// 終了XToolStripMenuItem
 			// 
@@ -255,6 +256,7 @@
 			this.groupBoxInputsResultButtonReset.TabIndex = 3;
 			this.groupBoxInputsResultButtonReset.Text = "初期化";
 			this.groupBoxInputsResultButtonReset.UseVisualStyleBackColor = true;
+			this.groupBoxInputsResultButtonReset.Click += new System.EventHandler(this.groupBoxInputsResultButtonReset_Click);
 			// 
 			// MainForm
 			// 

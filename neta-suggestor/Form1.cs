@@ -71,5 +71,36 @@ namespace neta_suggestor
 			this.groupBoxInputsResultInterestListBox1.Items.Add(this.groupBoxInputsInterestTextBox1.Text);
 			this.groupBoxInputsInterestTextBox1.Text = "";
 		}
+
+
+		private void resetInputedListBox()
+		{
+			this.groupBoxInputsResultCanListBox1.Items.Clear();
+			this.groupBoxInputsResultInterestListBox1.Items.Clear();
+		}
+		private void showResetInputedListBoxDialog()
+		{
+			DialogResult ret = MessageBox.Show("初期化しますがよろしいでしょうか？", "確認", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+			if (ret == DialogResult.Cancel)
+			{
+				return;
+			}
+			else
+			{
+				this.resetInputedListBox();
+				MessageBox.Show("初期化いたしました。", "通知", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+		}
+
+
+		private void groupBoxInputsResultButtonReset_Click(object sender, EventArgs e)
+		{
+			this.showResetInputedListBoxDialog();
+		}
+
+		private void 初期化ToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.showResetInputedListBoxDialog();
+		}
 	}
 }
